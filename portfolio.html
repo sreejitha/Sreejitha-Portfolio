@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Sreejitha Vijayan</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <main class="container">
+    <!-- Aside contains the links: Yoga and Meditation. Hidden until width 700px -->
+    <aside class="left-margin">
+      <figure>
+        <img src="images/yoga.png" alt="yoga picture" class="margin-picture margin-picture-one">
+        <figcaption><a href="#">Yoga</a></figcaption>
+      </figure>
+      <figure>
+        <img src="images/meditation.png" alt="meditation picture" class="margin-picture margin-picture-two">
+        <figcaption><a href="#">Meditation</a></figcaption>
+      </figure>
+    </aside>
+    <!-- Everything apart from 'Aside' is inside the article: title, hero image, featured links -->
+    <article class="article-content">
+      <header class="title-div">
+        <!-- Left Title Div: Logo, Right Title Div: Name, Subtext -->
+        <div class=left-title-div>
+          <img src="images/udacityLogo.png" alt="Udacity Logo" id="logo">
+        </div>
+        <div class=right-title-div>
+          <h1 class="name">SREEJITHA VIJAYAN</h1>
+          <p class="subtext">Mom, Yogi, Mumbaikar at heart</p>
+        </div>
+      </header>
+      <div class="menu-div">
+        <!-- Hamburger Menu -->
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+          </svg>
+        </a>
+      </div>
+      <!-- Nav shown when width is 700px and less -->
+      <nav id="drawer" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Yoga</a></li>
+          <li class="nav__item"><a href="#">Meditation</a></li>
+        </ul>
+      </nav>
+
+      <div id = "image-feature">
+        <div id="image-section">
+          <img src="images/MummaNivi.png" id="hero" alt="Portfolio Hero Image">
+        </div>
+        <div id="feature-section">
+          <p class="feature-heading">Favorite Articles</p>
+          <!--Feature figures of favorite Articles -->
+          <div class="feature-figure-div">
+            <img src="images/gurujiandme.jpg" alt="Featured Work Figure 1" class="feature-figures">
+            <img src="images/babycrying.jpg" alt="Featured Work Figure 2" class="feature-figures">
+            <img src="images/pulingari.jpeg" alt="Featured Work Figure 3" class="feature-figures">
+            <span class="stretch"></span>
+          </div>
+          <!--Feature outline text of favorite Articles -->
+          <div class="feature-text-div">
+            <div class="feature-figures">
+              <p>LETTING GO</p>
+              <p><a href="http://myfiveminuteyoga.com/5289/lessons-in-letting-go-from-b-k-s-iyengar/">http://myfiveminuteyoga.com/5289/lessons-in-letting-go-from-b-k-s-iyengar/</a></p>
+            </div>
+            <div class="feature-figures">
+              <p>DECODING CRIES</p>
+              <p><a href="http://www.katesurfs.com/category/crying/">http://www.katesurfs.com/category/crying/</a></p>
+            </div>
+            <div class="feature-figures">
+              <p>PULINGARI</p>
+              <p><a href="https://medium.com/@sreejitha.vijayan/postpartum-special-recipe-pulingari-tamarind-curry-347b214980fc">https://medium.com/@sreejitha.vijayan/postpartum-special-recipe-pulingari-tamarind-curry-347b214980fc</a></p>
+            </div>
+            <span class="stretch"></span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script>
+  /*
+  * Open the drawer when the menu icon is clicked.
+  */
+  var menu = document.querySelector('#menu');
+  var main = document.querySelector('main');
+  var drawer = document.querySelector('.nav');
+
+  menu.addEventListener('click', function(e) {
+    drawer.classList.toggle('open');
+    e.stopPropagation();
+  });
+  main.addEventListener('click', function() {
+    drawer.classList.remove('open');
+  });
+
+  </script>
+</body>
+</html>
