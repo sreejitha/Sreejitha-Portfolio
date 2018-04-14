@@ -4,4 +4,6 @@ images/ contains all the images in this project
 # verified html and css against html and css validators whose links were shared in the Project details
 # have gone by mockup to some extent but chosen how content is to be displayed for different devices
 # Most of the images are my personal ones, however 2 have been taken from Wikimedia (Which has a creative common license)
-# Udacity logo has been taken from the website.
+ATTRIBUTES
+#Udacity logo has been taken from the website.
+# Hamburger and navigation menu code was taken from the udacity html/css exercise solution in one of the lessons
