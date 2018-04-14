@@ -282,9 +282,9 @@ Showing feature figures and featured article links side by side taking 40% and 5
 @media screen and (min-width: 353px) and (max-width: 700px) {
 
   .feature-figure-div{
-    width: 40%;
+    width: 45%;
     margin-left: 0px;
-    margin-right: 10%;
+    margin-right: 5%;
   }
 
   .feature-text-div{
