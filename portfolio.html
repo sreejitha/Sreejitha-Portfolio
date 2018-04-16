@@ -56,47 +56,51 @@
           <p class="feature-heading">Favorite Places</p>
           <!--Feature figures of favorite Articles -->
           <div class="feature-figure-div">
-            <img src="images/mumbai.jpg" alt="Featured Work Figure 1" class="feature-figures">
-            <img src="images/san-francisco.jpg" alt="Featured Work Figure 2" class="feature-figures">
-            <img src="images/edinburgh.jpg" alt="Featured Work Figure 3" class="feature-figures">
-            <span class="stretch"></span>
+            <picture>
+              <source srcset="images/mumbai-mumma.jpg" media="screen and (max-width: 400px)">
+              <source srcset="images/mumbai-mumma-nivi.jpg" media="screen and (min-width:401px) and (max-width:500px)">
+              <img src="images/mumbai-native.png" alt="Featured Work Figure 1" class="feature-figures figure-1">
+            </picture>
+                <img src="images/sf.JPG" alt="Featured Work Figure 2" class="feature-figures">
+                <img src="images/edinburgh.png" alt="Featured Work Figure 3" class="feature-figures">
+                <span class="stretch"></span>
+              </div>
+              <!--Feature outline text of favorite Articles -->
+              <div class="feature-text-div">
+                <div class="feature-figures">
+                  <p>MUMBAI</p>
+                  <p><a href="https://www.lonelyplanet.com/india/mumbai-bombay">https://www.lonelyplanet.com/india/mumbai-bombay</a></p>
+                </div>
+                <div class="feature-figures">
+                  <p>SAN FRANCISCO</p>
+                  <p><a href="https://www.lonelyplanet.com/usa/san-francisco">https://www.lonelyplanet.com/usa/san-francisco</a></p>
+                </div>
+                <div class="feature-figures">
+                  <p>EDINBURGH</p>
+                  <p><a href="http://edinburgh.org/">http://edinburgh.org/</a></p>
+                </div>
+                <span class="stretch"></span>
+              </div>
+            </div>
           </div>
-          <!--Feature outline text of favorite Articles -->
-          <div class="feature-text-div">
-            <div class="feature-figures">
-              <p>MUMBAI</p>
-              <p><a href="https://www.lonelyplanet.com/india/mumbai-bombay">https://www.lonelyplanet.com/india/mumbai-bombay</a></p>
-            </div>
-            <div class="feature-figures">
-              <p>SAN FRANCISCO</p>
-              <p><a href="https://www.lonelyplanet.com/usa/san-francisco">https://www.lonelyplanet.com/usa/san-francisco</a></p>
-            </div>
-            <div class="feature-figures">
-              <p>EDINBURGH</p>
-              <p><a href="http://edinburgh.org/">http://edinburgh.org/</a></p>
-            </div>
-            <span class="stretch"></span>
-          </div>
-        </div>
-      </div>
-    </article>
-  </main>
-  <script>
-  /*
-  * Open the drawer when the menu icon is clicked.
-  */
-  var menu = document.querySelector('#menu');
-  var main = document.querySelector('main');
-  var drawer = document.querySelector('.nav');
+        </article>
+      </main>
+      <script>
+      /*
+      * Open the drawer when the menu icon is clicked.
+      */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
 
-  menu.addEventListener('click', function(e) {
-    drawer.classList.toggle('open');
-    e.stopPropagation();
-  });
-  main.addEventListener('click', function() {
-    drawer.classList.remove('open');
-  });
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
 
-  </script>
-</body>
-</html>
+      </script>
+    </body>
+    </html>

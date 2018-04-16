@@ -140,7 +140,7 @@ figure figcaption a {
   order: 5;
   background-color: #fff;
   border-top: 3px solid  #7d97ad;
-  float:right;
+  align-items: flex-end;
 }
 
 img, embed, object, video, figure {
@@ -335,7 +335,26 @@ Showing feature figures and featured article links side by side taking 40% and 5
   }
 }
 
+@media screen and (min-width: 353px) and (max-width: 400px) {
+  .figure-1{
+    content: url("images/mumbai-mumma.jpg");
+    width:100%;
+  }
+}
 
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .figure-1{
+    content: url("images/mumbai-mumma-nivi.jpg");
+    width:100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  .figure-1{
+    content: url("images/mumbai-native.png");
+    width:100%;
+  }
+}
 /*
 1.Left Nav is displayed, Hamburger and top nav are not displayed
 2.Adding a left margin to the container
