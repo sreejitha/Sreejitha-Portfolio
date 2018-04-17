@@ -7,3 +7,9 @@ images/ contains all the images in this project
 ATTRIBUTES
 #Udacity logo has been taken from the website.
 # Hamburger and navigation menu code was taken from the udacity html/css exercise solution in one of the lessons
+
+Re-submission
+# Used picture element with srcset. Used the media attribute inside the html instead of css, as was shown in an reference doc from code-review. Not sure if you can define srcset for different viewports inside css, so took this approach.
+
+
+
