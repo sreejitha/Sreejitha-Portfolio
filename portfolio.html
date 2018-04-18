@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-US">
+
 <head>
   <meta charset="utf-8">
   <title>Sreejitha Vijayan</title>
@@ -7,7 +8,19 @@
   <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+  <header class="title-div">
+    <!-- Left Title Div: Logo, Right Title Div: Name, Subtext -->
+    <div class=left-title-div>
+      <img src="images/udacityLogo.png" alt="Udacity Logo" id="logo">
+    </div>
+    <div class=right-title-div>
+      <h1 class="name">SREEJITHA VIJAYAN</h1>
+      <p class="subtext">Mom, Yogi, Mumbaikar at heart</p>
+    </div>
+  </header>
+
   <main class="container">
     <!-- Aside contains the links: Yoga and Meditation. Hidden until width 700px -->
     <aside class="left-margin">
@@ -22,16 +35,7 @@
     </aside>
     <!-- Everything apart from 'Aside' is inside the article: title, hero image, featured links -->
     <article class="article-content">
-      <header class="title-div">
-        <!-- Left Title Div: Logo, Right Title Div: Name, Subtext -->
-        <div class=left-title-div>
-          <img src="images/udacityLogo.png" alt="Udacity Logo" id="logo">
-        </div>
-        <div class=right-title-div>
-          <h1 class="name">SREEJITHA VIJAYAN</h1>
-          <p class="subtext">Mom, Yogi, Mumbaikar at heart</p>
-        </div>
-      </header>
+
       <div class="menu-div">
         <!-- Hamburger Menu -->
         <a id="menu" class="header__menu">
@@ -48,7 +52,7 @@
         </ul>
       </nav>
 
-      <div id = "image-feature">
+      <div id="image-feature">
         <div id="image-section">
           <img src="images/MummaNivi.png" id="hero" alt="Portfolio Hero Image">
         </div>
@@ -58,58 +62,63 @@
           <div class="feature-figure-div">
             <picture>
               <source srcset="images/mumbai-mumma.jpg" media="screen and (max-width: 400px)">
-              <source srcset="images/mumbai-mumma-nivi.jpg" media="screen and (min-width:401px) and (max-width:500px)">
-              <img src="images/mumbai-native.png" alt="Featured Work Figure 1" class="feature-figures">
+              <source srcset="images/mumbai-mumma-nivi.jpg" media="screen and (min-width:401px) and (max-width:500px)">              <img src="images/mumbai-native.png" alt="Featured Work Figure 1" class="feature-figures">
             </picture>
             <picture>
-                  <source srcset="images/sf-1.jpg" media="screen and (max-width: 400px)">
-                  <source srcset="images/sf-2.jpg" media="screen and (min-width: 401px) and (max-width: 450px)">
-                  <source srcset="images/sf-1.jpg" media="screen  and (min-width: 701px) and (max-width: 800px)">
-                  <img src="images/san-fran.jpg" alt="Featured Work Figure 2" class="feature-figures">
+              <source srcset="images/sf-1.jpg" media="screen and (max-width: 400px)">
+              <source srcset="images/sf-2.jpg" media="screen and (min-width: 401px) and (max-width: 450px)">
+              <source srcset="images/sf-1.jpg" media="screen  and (min-width: 701px) and (max-width: 800px)">
+              <img src="images/san-fran.jpg" alt="Featured Work Figure 2" class="feature-figures">
             </picture>
             <picture>
-                  <source srcset="images/edinburgh-1.jpg" media="screen and (max-width: 400px)">
-                  <source srcset="images/edinburgh-2.jpg" media="screen and (min-width: 401px) and (max-width: 600px)">
-                  <img src="images/edinburgh.jpg" alt="Featured Work Figure 3" class="feature-figures">
+              <source srcset="images/edinburgh-1.jpg" media="screen and (max-width: 400px)">
+              <source srcset="images/edinburgh-2.jpg" media="screen and (min-width: 401px) and (max-width: 600px)">
+              <img src="images/edinburgh.jpg" alt="Featured Work Figure 3" class="feature-figures">
             </picture>
             <span class="stretch"></span>
-              </div>
-              <!--Feature outline text of favorite Articles -->
-              <div class="feature-text-div">
-                <div class="feature-figures">
-                  <p>MUMBAI</p>
-                  <p><a href="https://www.lonelyplanet.com/india/mumbai-bombay">https://www.lonelyplanet.com/india/mumbai-bombay</a></p>
-                </div>
-                <div class="feature-figures">
-                  <p>SAN FRANCISCO</p>
-                  <p><a href="https://www.lonelyplanet.com/usa/san-francisco">https://www.lonelyplanet.com/usa/san-francisco</a></p>
-                </div>
-                <div class="feature-figures">
-                  <p>EDINBURGH</p>
-                  <p><a href="http://edinburgh.org/">http://edinburgh.org</a></p>
-                </div>
-                <span class="stretch"></span>
-              </div>
-            </div>
           </div>
-        </article>
-      </main>
-      <script>
-      /*
-      * Open the drawer when the menu icon is clicked.
-      */
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('.nav');
+          <!--Feature outline text of favorite Articles -->
+          <div class="feature-text-div">
+            <div class="feature-figures">
+              <p>MUMBAI</p>
+              <p><a href="https://www.lonelyplanet.com/india/mumbai-bombay">https://www.lonelyplanet.com/india/mumbai-bombay</a></p>
+            </div>
+            <div class="feature-figures">
+              <p>SAN FRANCISCO</p>
+              <p><a href="https://www.lonelyplanet.com/usa/san-francisco">https://www.lonelyplanet.com/usa/san-francisco</a></p>
+            </div>
+            <div class="feature-figures">
+              <p>EDINBURGH</p>
+              <p><a href="http://edinburgh.org/">http://edinburgh.org</a></p>
+            </div>
+            <span class="stretch"></span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
 
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
+  <footer class="my-footer">
+    <p>Created by Sreejitha. All rights reversed. email: sreejitha.vijayan@gmail.com</p>
+  </footer>
 
-      </script>
-    </body>
-    </html>
+  <script>
+    /*
+     * Open the drawer when the menu icon is clicked.
+     */
+    var menu = document.querySelector('#menu');
+    var main = document.querySelector('main');
+    var drawer = document.querySelector('.nav');
+
+    menu.addEventListener('click', function(e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function() {
+      drawer.classList.remove('open');
+    });
+  </script>
+
+</body>
+
+</html>

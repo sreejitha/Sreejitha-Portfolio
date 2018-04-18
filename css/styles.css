@@ -3,7 +3,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  text-align: justify;
   margin: auto 0;
   font-family: 'Open Sans', sans-serif;
 }
@@ -17,10 +16,9 @@
   flex-wrap: wrap;
 }
 
-
 .left-title-div {
   order: 2;
-  display: block;
+  display: inline-block;
   width: 15%;
 }
 
@@ -31,9 +29,8 @@
 
 .right-title-div {
   order: 3;
-  display: block;
+  display: inline-block;
   text-align: right;
-  width: 85%;
 }
 
 .name {
@@ -116,7 +113,7 @@ figure figcaption a {
 }
 
 .menu-div {
-  display: block;
+  display: inline-block;
   height: 50px;
   width: 100%;
   order: 4;
@@ -164,7 +161,6 @@ img, embed, object, video, figure {
   display: flex;
   flex-wrap: wrap;
   order: 8;
-  height: 300px;
 }
 
 /*Styling for text 'Favorite Articles'*/
@@ -176,7 +172,7 @@ img, embed, object, video, figure {
   margin-left: 2px;
   margin-bottom: 0px;
   color: #b3cccc;
-  display: block;
+  display: inline-block;
   width: 100%;
 }
 
@@ -198,7 +194,6 @@ img, embed, object, video, figure {
   -ms-text-justify: distribute-all-lines;
   /*  text-justify: distribute-all-lines; */
 }
-
 /*Styling figures in Favorite Articles*/
 .feature-figures {
   width: 30%;
@@ -229,6 +224,15 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.my-footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
 }
 
 /*
@@ -269,6 +273,8 @@ ul {
   text-decoration: underline;
   color: #212121;
 }
+
+
 
 /*
 Not displaying the left navigation, hence the article can take the full width of the page
@@ -314,7 +320,7 @@ Showing feature figures and featured article links side by side taking 40% and 5
 
   .nav__item {
     display: list-item;
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 1px solid #e0e0e0;
     width: 100%;
     text-align: left;
   }
@@ -330,7 +336,13 @@ Showing feature figures and featured article links side by side taking 40% and 5
     width: 32px;
     fill: #e0e0e0;
   }
+
+  .right-title-div {
+    width: 85%;
+  }
 }
+
+
 
 /*
 1.Left Nav is displayed, Hamburger and top nav are not displayed
@@ -356,15 +368,25 @@ Showing feature figures and featured article links side by side taking 40% and 5
     font-size: 50px;
   }
 
-  .container {
+  .container, .my-footer, .title-div {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .left-title-div {
+    margin-left: 30%;
+
+  }
+
+  .right-title-div {
+    width: 55%;
   }
 }
 
 /*Title div (Specifically right title div) needs more length between these widths*/
 @media screen and (min-width: 701px) and (max-width: 853px) {
+
   .title-div {
     height: 200px;
   }
